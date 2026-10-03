@@ -136,3 +136,92 @@ footer p {
     height: 28px;
     margin: 0 4px;
 }
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures {
+    padding: 20px;
+}
+
+.adventures h2 {
+    margin-bottom: 20px;
+}
+
+.adventures figure {
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.adventures figcaption {
+    padding: 8px;
+    font-weight: bold;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    align-items: start;
+}
+
+.adventures h2 {
+    grid-column: 1 / -1;
+}
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header,
+main,
+footer {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 12px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .history {
+        grid-template-columns: 1fr;
+    }
+
+    .adventures {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
